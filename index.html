@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library & Chandigarh University Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"> <!-- Remix Icon CDN -->
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
+  
+    <!-- Logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        <img src="logo.webp" alt="Library Logo" />
+      </a>
+    </div>
+  
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <button class="nav-button home">
+        <i class="ri-home-3-line"></i>
+        <a href="#homemain">Home</a>
+      </button>
+      <button class="nav-button notices">
+        <i class="ri-notification-3-line"></i>
+        <a href="./notice/notice.html">Notices</a>
+      </button>
+      <button class="nav-button newspaper">
+        <i class="ri-newspaper-line"></i>
+        <a href="./newspaper/index.html">Newspaper</a>
+      </button>
+      <button class="nav-button signup">
+        <i class="ri-user-add-line"></i> 
+        <a href="./signup/signup.html">Sign Up</a>
+      </button>
+      <button class="nav-button signin">
+        <i class="ri-login-box-line"></i>
+        <a href="./login/login.html">Log In</a>
+      </button>
+      <button class="nav-button awards">
+        <i class="ri-award-line"></i> 
+        <a href="./award/award.html">Awards</a>
+      </button>
+      <button class="nav-button about">
+        <i class="ri-information-line"></i>
+        <a href="./About us/about.html">About Us</a>
+      </button>
+      <button class="nav-button guidelines">
+        <i class="ri-book-2-line"></i>
+        <a href="./UserGuidelines/userguide.html">User Guidelines</a>     
+       </button>
+    </div>
+  </nav>
+  
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-content">
+      <h2>Library Menu</h2>
+      <a href="./About us/about.html"><i class="ri-book-line"></i> About the Library</a>
+      <a href="#library-details"><i class="ri-service-line"></i> Services</a>
+      <a href="#library-resources"><i class="ri-folder-line"></i> Resources</a>
+      <a href="./award/award.html"><i class="ri-calendar-event-line"></i> Events</a>
+      <a href="#contact"><i class="ri-mail-line"></i> Contact Us</a>
+  
+      <h2>Social Media Links</h2>
+      <a href="https://facebook.com" target="_blank">
+        <i class="ri-facebook-circle-fill"></i> Facebook
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <i class="ri-twitter-fill"></i> Twitter
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <i class="ri-instagram-fill"></i> Instagram
+      </a>
+    </div>
+  </div>
+  
+  <header>
+    <h1>Welcome to the Library</h1>
+  </header>
+    <div class="mainimage" id="homemain">
+        <div class="banner">
+            <div class="line"></div>
+            <div class="banner2">
+            
+            <h1>BrainWave Digital - <span style="color: rgb(231, 231, 30);">Library</span></h1>
+            <p>At BrainWave Library, we are dedicated to enhancing your learning journey. Beyond offering customized resources for your courses, we curate a vast collection of enriching materials, thoughtfully designed to inspire your intellectual growth and ensure your success.</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Main Content -->
+        <section id="specification">
+            <div class="specification">
+              <div class="opacity"></div>
+              <div class="specify" id="Books">
+                <p id="number">21545+</p>
+                <p id="content">Books</p>
+              </div>
+              <div class="specify" id="E-Books">
+                <p id="number">3584+</p>
+                <p id="content">E-Books</p>
+              </div>
+              <div class="specify" id="E-Journals">
+                <p id="number">3521++</p>
+                <p id="content">E-Journals</p>
+              </div>
+              <div class="specify" id="SeatingCapacity">
+                <p id="number">3500+</p>
+                <p id="content">Seating Capacity</p>
+              </div>
+              <div class="specify" id="Reviews">
+                <p id="number">1200+</p>
+                <p id="content">Reviews</p>
+              </div>
+              <div class="specify" id="PrintPeriodicals">
+                <p id="number">8751+</p>
+                <p id="content">Print Periodicals</p>
+              </div>
+            </div>
+          </section>
+          <section id="library-details">
+            <div class="container">
+              <!-- Library Timetable -->
+              <div class="timetable">
+                <h2>📚 Library Timetable</h2>
+                <p>Check out the library opening and closing times for each day of the week.</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Day</th>
+                      <th>Opening Time</th>
+                      <th>Closing Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Monday</td>
+                      <td>8:00 AM</td>
+                      <td>8:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>8:00 AM</td>
+                      <td>8:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>8:00 AM</td>
+                      <td>8:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>Thursday</td>
+                      <td>8:00 AM</td>
+                      <td>8:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>8:00 AM</td>
+                      <td>8:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>Saturday</td>
+                      <td>9:00 AM</td>
+                      <td>5:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>Closed</td>
+                      <td>Closed</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          
+              <!-- Library Membership & Loan Privileges -->
+              <div class="membership">
+                <h2>📖 Library Membership & Loan Privileges</h2>
+                <p>Discover the benefits of library membership and borrowing policies.</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Membership Type</th>
+                      <th>Loan Duration</th>
+                      <th>Books Allowed</th>
+                      <th>Additional Benefits</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Student</td>
+                      <td>14 Days</td>
+                      <td>5</td>
+                      <td>Access to study rooms</td>
+                    </tr>
+                    <tr>
+                      <td>Faculty</td>
+                      <td>30 Days</td>
+                      <td>10</td>
+                      <td>Priority book requests</td>
+                    </tr>
+                    <tr>
+                      <td>Guest</td>
+                      <td>7 Days</td>
+                      <td>2</td>
+                      <td>Limited access to digital resources</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Library Resources Section -->
+<section id="library-resources">
+  <div class="container">
+    <!-- Publishers -->
+    <div class="publishers">
+      <h2>📘 Publishers</h2>
+      <p>Explore content from various renowned publishers.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Publisher Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>ACM Digital Library</td></tr>
+          <tr><td>IEEE Xplore Digital Library</td></tr>
+          <tr><td>PubMed Central</td></tr>
+          <tr><td>SpringerLink</td></tr>
+          <tr><td>ASME Digital Collection</td></tr>
+          <tr><td>OMICS International</td></tr>
+          <tr><td>arXiv</td></tr>
+          <tr><td>JAMA Network</td></tr>
+          <tr><td>British Medical Journal (BMJ)</td></tr>
+          <tr><td>Frontiers</td></tr>
+          <tr><td>ASCE</td></tr>
+          <tr><td>MDPI</td></tr>
+          <tr><td>View More</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Subjects -->
+    <div class="subjects">
+      <h2>📚 Subjects</h2>
+      <p>Dive into various subjects across different disciplines.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Arts and Humanities</td></tr>
+          <tr><td>Computer Science</td></tr>
+          <tr><td>Chemical Engineering</td></tr>
+          <tr><td>Earth and Planetary Sciences</td></tr>
+          <tr><td>Environmental Science</td></tr>
+          <tr><td>Immunology & Microbiology</td></tr>
+          <tr><td>Physics and Astronomy</td></tr>
+          <tr><td>Health Professions</td></tr>
+          <tr><td>Social Sciences</td></tr>
+          <tr><td>Materials Science</td></tr>
+          <tr><td>Agricultural/Biological Sciences</td></tr>
+          <tr><td>Multidisciplinary</td></tr>
+          <tr><td>View More</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Contents -->
+    <div class="contents">
+      <h2>📖 Contents</h2>
+      <p>Access resources from top institutions and organizations.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Institutions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>IIT/ISI/IISc/IIM/NIT</td><td>IIT Jodhpur, IIT Kharagpur, ISI Kolkata, IIM Ahmedabad, NIT Rourkela</td></tr>
+          <tr><td>CSIR/ICAR/ICMR/IISER</td><td>CSIR-NISCPR, ICAR-KRISHI, ICMR-NIRT, IISER Pune</td></tr>
+          <tr><td>Central and State Universities</td><td>Central University of Haryana, Sikkim University, Vidyasagar University</td></tr>
+          <tr><td>Inflibnet</td><td>Shodhganga, Institutional Repository, N-LIST-Oxford Scholarship</td></tr>
+          <tr><td>View More</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+ <!-- Featured Events Section -->
+ <section class="featured-events">
+  <h1 class="section-title" style="font-size: 60px;">Featured Events</h1><br>
+  <div class="featured-slider">
+      <div class="slider-item">
+          <img src="event1.jpg" alt="Storytelling Hour">
+          <div class="slider-caption">
+              <h2>Storytelling Hour</h2>
+              <p>January 10, 2025</p>
+              <p>Join us for a fun-filled hour of storytelling for children.</p>
+              <a href="#">Learn More</a>
+          </div>
+      </div>
+      <div class="slider-item">
+        <img src="image1.jpg" alt="Storytelling Hour">
+        <div class="slider-caption">
+            <h2>Storytelling Hour</h2>
+            <p>January 10, 2025</p>
+            <p>Join us for a fun-filled hour of storytelling for children.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+    <div class="slider-item">
+      <img src="image2.jpg" alt="Storytelling Hour">
+      <div class="slider-caption">
+          <h2>Storytelling Hour</h2>
+          <p>January 10, 2025</p>
+          <p>Join us for a fun-filled hour of storytelling for children.</p>
+          <a href="#">Learn More</a>
+      </div>
+  </div>
+      <div class="slider-item">
+          <img src="event2.jpg" alt="Book Club">
+          <div class="slider-caption">
+              <h2>Book Club: Fiction Lovers</h2>
+              <p>January 15, 2025</p>
+              <p>A great opportunity for book lovers to discuss the latest fiction.</p>
+              <a href="#">Learn More</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Upcoming Events Section -->
+<section class="upcoming-events">
+  <h1 class="section-title" style="font-size:60px;">Upcoming Events</h1><br>
+  <div class="events-container">
+      <div class="event-card">
+          <img src="image1.jpg" alt="Coding Workshop" class="event-image">
+          <div class="event-details">
+              <h2 class="event-title">Coding Workshop for Kids</h2>
+              <p class="event-date">February 5, 2025 - 10:00 AM</p>
+              <p class="event-description">Introduce your child to the basics of coding in this fun workshop!</p>
+              <a href="#" class="event-link">Learn More</a>
+          </div>
+      </div>
+      <div class="event-card">
+          <img src="image5.jpg" alt="Reading Marathon" class="event-image">
+          <div class="event-details">
+              <h2 class="event-title">Reading Marathon</h2>
+              <p class="event-date">February 10, 2025 - 12:00 PM</p>
+              <p class="event-description">A marathon reading session with amazing prizes for participants!</p>
+              <a href="#" class="event-link">Learn More</a>
+          </div>
+      </div>
+      <div class="event-card">
+          <img src="image2.jpg" alt="Literary Escape Night" class="event-image">
+          <div class="event-details">
+              <h2 class="event-title">Literary Escape Night</h2>
+              <p class="event-date">February 15, 2025 - 7:00 PM</p>
+              <p class="event-description">Join us for a night of mystery and adventure in our literary escape room challenge!</p>
+              <a href="#" class="event-link">Learn More</a>
+          </div>
+      </div>
+      <div class="event-card">
+        <img src="image3.jpg" alt="Poetry Reading and Open Mic" class="event-image">
+        <div class="event-details">
+            <h2 class="event-title">Poetry Reading and Open Mic</h2>
+            <p class="event-date">February 18, 2025 - 6:00 PM</p>
+            <p class="event-description">A night to celebrate poetry with readings from local poets and an open mic session!</p>
+            <a href="#" class="event-link">Learn More</a>
+        </div>
+    </div>
+    <div class="event-card">
+      <img src="image4.jpg" alt="Book Club Meetup" class="event-image">
+      <div class="event-details">
+          <h2 class="event-title">Book Club Meetup</h2>
+          <p class="event-date">February 22, 2025 - 3:00 PM</p>
+          <p class="event-description">Join fellow book lovers for a lively discussion of the month's selected novel!</p>
+          <a href="#" class="event-link">Learn More</a>
+      </div>
+  </div>
+  <div class="event-card">
+    <img src="image6.jpg" alt="Creative Writing Workshop" class="event-image">
+    <div class="event-details">
+        <h2 class="event-title">Creative Writing Workshop</h2>
+        <p class="event-date">February 25, 2025 - 1:00 PM</p>
+        <p class="event-description">Unlock your creativity with this hands-on writing workshop designed for beginners and experts alike!</p>
+        <a href="#" class="event-link">Learn More</a>
+    </div>
+</div>
+<div class="event-card">
+  <img src="event3.jpg" alt="Children’s Story Hour" class="event-image">
+  <div class="event-details">
+      <h2 class="event-title">Children’s Story Hour</h2>
+      <p class="event-date">February 28, 2025 - 10:00 AM</p>
+      <p class="event-description">Bring your little ones for a magical morning of storytelling and fun activities!</p>
+      <a href="#" class="event-link">Learn More</a>
+  </div>
+</div>
+<div class="event-card">
+  <img src="image1.jpg" alt="Local Author Showcase" class="event-image">
+  <div class="event-details">
+      <h2 class="event-title">Local Author Showcase</h2>
+      <p class="event-date">March 2, 2025 - 2:00 PM</p>
+      <p class="event-description">Discover new local talent at our author showcase, featuring talks, book signings, and more!</p>
+      <a href="#" class="event-link">Learn More</a>
+  </div>
+</div>
+  </div>
+</section>
+
+
+<!-- Past Events Timeline Section -->
+<section class="past-events">
+  <h1 class="section-title" style="font-size: 60px;">Past Events</h1><br>
+  <div class="timeline">
+      <div class="timeline-item">
+          <div class="timeline-date">December 1, 2024</div>
+          <div class="timeline-content">
+              <h3>Library Annual Charity Drive</h3>
+              <p>We collected over 200 books and raised funds for local schools!</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="timeline-date">November 10, 2024</div>
+          <div class="timeline-content">
+              <h3>Halloween Story Night</h3>
+              <p>Spooky fun for kids with stories and games to celebrate Halloween!</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="timeline-date">October 5, 2024</div>
+          <div class="timeline-content">
+              <h3>Book Donation Drive</h3>
+              <p>Our community donated books for the library to make our shelves fuller.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+          <section id="contact">
+            <div class="contact-container">
+              <h2>📞 Contact Us</h2>
+              <p>We’d love to hear from you! Feel free to reach out to us.</p>
+              <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:info@example.com">info@brainwavedigitallibrary.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+123 456 7890</a></p>
+              </div>
+              <div class="social-links">
+                <h3>Connect with Us:</h3>
+                <a href="https://facebook.com" target="_blank" class="social-icon facebook">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="social-icon instagram">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">LinkedIn</a>
+              </div>
+            </div>
+          </section>
+          
+    </main>
+
+    <footer>
+        <p>Contact us: info@brainwavedigitallibrary.com | Phone: (123) 456-7890</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>&copy; 2024 BrainWave Digital Library. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
